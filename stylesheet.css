@@ -1,0 +1,80 @@
+<style>
+a {margin-right:20px;
+   text-decoration:none;
+   opacity:90%;
+   color:black;}
+a:hover{
+  text-decoration:underline;
+}
+input{width:700px;
+height:34px;
+border-radius: 15px;
+}
+button{
+width:170px;
+}
+.order{
+  font-size:17px;
+  word-spcaing:20px;
+}
+#lftsde{
+  display:flex;
+}
+#rghtsde{
+  display:flex;
+  justify-content:flex-end;}
+
+.smlimg{
+  width:20px;
+  height:20px;
+  opacity:50%}
+#main{
+  display:flex;
+  justify-content:center;
+  margin-top:200px;}
+.gemblm{
+  height:150px;}
+
+#srchbar {
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+}
+#srch{
+  border:1px solid #202124;;
+  opacity:40%;
+  }
+#srch:hover {
+  box-shadow: 0 0 2px black;
+ }
+#btton {
+  display:flex;
+  justify-content:center;
+  margin-top:40px;
+  height:35px;
+
+}
+.gsrch{
+  margin-right:50px;
+  background-color:#f8f9fa;
+  border: 1px solid #f8f9fa;
+}
+#historic{
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+  line-height:50px;
+}
+.emblm{margin-right:20px;}
+ .cnda{
+  position:absolute;
+  font-size: 20px;
+  margin-left:-15px;
+  line-height: 40px;
+  width:100vw;
+  background-color: rgba(0,0,0,.05);
+  padding-left: 27px;
+  bottom:0px;
+  border:1px solid rgba(0,0,0,.09);
+}
+</style>

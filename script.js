@@ -28,7 +28,7 @@ let getPlayerSelection = () =>{
 
 let cap = (word) => {
   word = word.toUpperCase();
-  return word; 
+  return word;
 }
 
 

@@ -31,35 +31,51 @@ let cap = (word) => {
   return word;
 }
 
-
+let winner = "";
 let game =(playerSelection, computerSelection) => {
    let result = "";
    playerSelection = cap(playerSelection);
    if (playerSelection === "ROCK" && computerSelection === "paper"){
-     result = "You lose, Paper beats rock!";}
+     result = "You lose, Paper beats rock!";
+     winner = "comp";}
    else if (playerSelection === "ROCK" && computerSelection === "scissors"){
-     result = "You win, Rock beats scissors!";}
+     result = "You win, Rock beats scissors!";
+     winner = "player";}
    else if (playerSelection === "ROCK" && computerSelection === "rock"){
-     result = "Tie Game!";}
+     result = "Its a Tie!";
+     winner = "tie";}
    else if (playerSelection === "SCISSORS" && computerSelection === "paper"){
-     result = "You win, Scissors beats paper";}
+     result = "You win, Scissors beats paper";
+     winner = "player";}
    else if (playerSelection === "SCISSORS" && computerSelection == "rock"){
-     result = "You lose, Rock beats scissors";}
+     result = "You lose, Rock beats scissors";
+     winner = "comp";}
    else if (playerSelection === "SCISSORS" && computerSelection == "scissors"){
-     result = "Tie Game!";}
-    else if (playerSelection === "PAPER" && computerSelection === 'rock'){
-      result = "You win, Paper beats Rock!";}
-    else if (playerSelection === 'PAPER' && computerSelection === 'scissors'){
-      result = "You lose, Scissors beats Paper!";}
-    else if (playerSelection === 'PAPER' && computerSelection === 'paper'){
-      result = "Tie Game!";}
+     result = "Its a Tie";
+     winner = "tie"}
+   else if (playerSelection === "PAPER" && computerSelection === 'rock'){
+      result = "You win, Paper beats Rock!";
+      winner = "player";}
+   else if (playerSelection === 'PAPER' && computerSelection === 'scissors'){
+      result = "You lose, Scissors beats Paper!";
+      winner = "comp";}
+   else if (playerSelection === 'PAPER' && computerSelection === 'paper'){
+      result = "Its a tie";
+      winner = "tie"}
    return result;
 };
-
 let play = () =>{
-  for (let i = 0; i < 6; i++){
+  let countP = 0;
+  let countC = 0;
+  for (let i=0; countP <= 5 || countC <= 5;i++){
     let computerSelection = getComputerSelection();
     let playerSelection = getPlayerSelection();
+    if (winner === 'player'){
+      countP += 1;
+    }
+    else if(winner === 'comp'){
+      countC += 1};
     console.log(game(playerSelection,computerSelection));
- };
+    console.log(countC,countP);
+  };
 };

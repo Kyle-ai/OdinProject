@@ -1,0 +1,36 @@
+let winner = "";
+let game =(playerSelection, computerSelection) => {
+   let result = "";
+   playerSelection = cap(playerSelection);
+   if (playerSelection === "ROCK" && computerSelection === "paper"){
+     result = "You lose, Paper beats rock!";
+     winner = "comp";}
+   else if (playerSelection === "ROCK" && computerSelection === "scissors"){
+     result = "You win, Rock beats scissors!";
+     winner = "player";}
+   else if (playerSelection === "ROCK" && computerSelection === "rock"){
+     result = "Its a Tie!";
+     winner = "tie";}
+   else if (playerSelection === "SCISSORS" && computerSelection === "paper"){
+     result = "You win, Scissors beats paper";
+     winner = "player";}
+   else if (playerSelection === "SCISSORS" && computerSelection == "rock"){
+     result = "You lose, Rock beats scissors";
+     winner = "comp";}
+   else if (playerSelection === "SCISSORS" && computerSelection == "scissors"){
+     result = "Its a Tie";
+     winner = "tie"}
+   else if (playerSelection === "PAPER" && computerSelection === 'rock'){
+      result = "You win, Paper beats Rock!";
+      winner = "player";}
+   else if (playerSelection === 'PAPER' && computerSelection === 'scissors'){
+      result = "You lose, Scissors beats Paper!";
+      winner = "comp";}
+   else if (playerSelection === 'PAPER' && computerSelection === 'paper'){
+      result = "Its a tie";
+      winner = "tie"}
+   return result;
+}
+
+const playerTurn = document.querySelector(btn);
+btn.addEventListner('click', function(play)

@@ -1,0 +1,39 @@
+body {
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-vocal-drum-training-course-enrollment-background-image_185321.jpg);
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.keys {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vh;
+  color: pink;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3,150px);
+  grid-template-rows: repeat(3,200px);
+  grid-template-areas:
+    "sound1 sound2 sound3"
+    "sound4 sound5 sound6"
+    "sound7 sound8 sound9";}
+.sound1 {
+  grid-area:sound1;}
+.sound2 {
+  grid-area: sound2;}
+.sound3 {
+  grid-area: sound3;}
+.sound4 {
+  grid-area: sound4;}
+.sound5 {
+  grid-area: sound5;}
+.sound6 {
+  grid-area: sound6;}
+.sound7 {
+  grid-area: sound7;}
+.sound8 {
+  grid-area:sound8;}
+.sound9 {
+  grid-area: sound9;}
